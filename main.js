@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
    var lottie_desk = $(".lottie");
    var lottie_mob = $(".lottie_mobile")
-  if(window.innerHeight>568){
+  if(window.matchMedia("(min-width: 576px)").matches){
     lottie_mob.css({"display":"none"})
     //GSAP
     //PERSONA
