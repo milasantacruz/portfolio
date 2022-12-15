@@ -126,115 +126,115 @@ document.addEventListener('DOMContentLoaded', function(){
 
    var lottie_desk = $(".lottie");
    var lottie_mob = $(".lottie_mobile")
-if(window.innerHeight>568){
-  lottie_mob.css({"display":"none"})
-  //GSAP
-  //PERSONA
+  if(window.innerHeight>568){
+    lottie_mob.css({"display":"none"})
+    //GSAP
+    //PERSONA
 
-  var persona = $(".persona");
-  var laboral = $(".laboral");
-  var edu = $(".edu");
-  var skills = $(".skills")
-  var proyes = $(".proyes");
+    var persona = $(".persona");
+    var laboral = $(".laboral");
+    var edu = $(".edu");
+    var skills = $(".skills")
+    var proyes = $(".proyes");
 
-  var tlPersona = gsap.timeline();
-  tlPersona.from(".personaImg, .personaText",{opacity:0,y:"1200px"})
-  var controller_1 = new $.ScrollMagic.Controller();
+    var tlPersona = gsap.timeline();
+    tlPersona.from(".personaImg, .personaText",{opacity:0,y:"1200px"})
+    var controller_1 = new $.ScrollMagic.Controller();
 
-  new ScrollMagic.Scene({
-    triggerElement:persona,
-    duration:"20%",
-    triggerHook:0.0,
+    new ScrollMagic.Scene({
+      triggerElement:persona,
+      duration:"20%",
+      triggerHook:0.0,
 
-  }).on("enter", function(e){
-    //tlPersona.reverse()
-  }).on("leave", function(e){
-  // tlPersona.play()
-  }).addTo(controller_1)
+    }).on("enter", function(e){
+      //tlPersona.reverse()
+    }).on("leave", function(e){
+    // tlPersona.play()
+    }).addTo(controller_1)
 
-  //LABORAL
+    //LABORAL
 
-  var laboralText = $(".laboralText");
-  var laboralItem = $(".laboralItem")
-  var tlLaboralIn = gsap.timeline();
-  tlLaboralIn.from(laboralText, {opacity:0,x:-200})
-            .from(laboralItem, {opacity:0,y:"200px", stagger:0.1})
-  var controller_1 = new $.ScrollMagic.Controller();
-  tlLaboralIn.pause()
-  new ScrollMagic.Scene({
-    triggerElement:laboral,
-    duration:"100%",
-    triggerHook:0.5,
+    var laboralText = $(".laboralText");
+    var laboralItem = $(".laboralItem")
+    var tlLaboralIn = gsap.timeline();
+    tlLaboralIn.from(laboralText, {opacity:0,x:-200})
+              .from(laboralItem, {opacity:0,y:"200px", stagger:0.1})
+    var controller_1 = new $.ScrollMagic.Controller();
+    tlLaboralIn.pause()
+    new ScrollMagic.Scene({
+      triggerElement:laboral,
+      duration:"100%",
+      triggerHook:0.5,
 
-  }).on("enter", function(e){
-    tlLaboralIn.play()
-  }).on("leave", function(e){
-    tlLaboralIn.reverse()
-  }).addTo(controller_1)
+    }).on("enter", function(e){
+      tlLaboralIn.play()
+    }).on("leave", function(e){
+      tlLaboralIn.reverse()
+    }).addTo(controller_1)
 
-  //EDU
+    //EDU
 
-  var eduText = $(".eduText");
-  var eduItem = $(".eduItem")
-  var tleduIn = gsap.timeline();
-  tleduIn.from(eduText, {opacity:0,x:-200})
-            .from(eduItem, {opacity:0,y:"200px", stagger:0.1})
-  var controller_1 = new $.ScrollMagic.Controller();
-  tleduIn.pause()
-  new ScrollMagic.Scene({
-    triggerElement:edu,
-    duration:"100%",
-    triggerHook:0.5,
+    var eduText = $(".eduText");
+    var eduItem = $(".eduItem")
+    var tleduIn = gsap.timeline();
+    tleduIn.from(eduText, {opacity:0,x:-200})
+              .from(eduItem, {opacity:0,y:"200px", stagger:0.1})
+    var controller_1 = new $.ScrollMagic.Controller();
+    tleduIn.pause()
+    new ScrollMagic.Scene({
+      triggerElement:edu,
+      duration:"100%",
+      triggerHook:0.5,
 
-  }).on("enter", function(e){
-    tleduIn.play()
-  }).on("leave", function(e){
-    tleduIn.reverse()
-  }).addTo(controller_1)
+    }).on("enter", function(e){
+      tleduIn.play()
+    }).on("leave", function(e){
+      tleduIn.reverse()
+    }).addTo(controller_1)
 
-  //Skills
+    //Skills
 
-  var skillsText = $(".skillsText");
-  var skillsItem = $(".skillsItem")
-  var tlskillsIn = gsap.timeline();
-  tlskillsIn.from(skillsText, {opacity:0,x:-200})
-            .from(skillsItem, {opacity:0,y:"200px", stagger:0.1})
-  var controller_1 = new $.ScrollMagic.Controller();
-  tlskillsIn.pause()
-  new ScrollMagic.Scene({
-    triggerElement:skills,
-    duration:"100%",
-    triggerHook:0.5,
+    var skillsText = $(".skillsText");
+    var skillsItem = $(".skillsItem")
+    var tlskillsIn = gsap.timeline();
+    tlskillsIn.from(skillsText, {opacity:0,x:-200})
+              .from(skillsItem, {opacity:0,y:"200px", stagger:0.1})
+    var controller_1 = new $.ScrollMagic.Controller();
+    tlskillsIn.pause()
+    new ScrollMagic.Scene({
+      triggerElement:skills,
+      duration:"100%",
+      triggerHook:0.5,
 
-  }).on("enter", function(e){
-    tlskillsIn.play()
-  }).on("leave", function(e){
-    tlskillsIn.reverse()
-  }).addTo(controller_1)
+    }).on("enter", function(e){
+      tlskillsIn.play()
+    }).on("leave", function(e){
+      tlskillsIn.reverse()
+    }).addTo(controller_1)
 
-  //Proyes
+    //Proyes
 
-  var proyesText = $(".proyesText");
-  var proyesItem = $(".proyesItem")
-  var tlproyesIn = gsap.timeline();
-  tlproyesIn.from(proyesText, {opacity:0,x:-200})
-            .from(proyesItem, {opacity:0,y:"200px", stagger:0.1})
-  var controller_1 = new $.ScrollMagic.Controller();
-  tlproyesIn.pause()
-  new ScrollMagic.Scene({
-    triggerElement:proyes,
-    duration:"100%",
-    triggerHook:0.5,
+    var proyesText = $(".proyesText");
+    var proyesItem = $(".proyesItem")
+    var tlproyesIn = gsap.timeline();
+    tlproyesIn.from(proyesText, {opacity:0,x:-200})
+              .from(proyesItem, {opacity:0,y:"200px", stagger:0.1})
+    var controller_1 = new $.ScrollMagic.Controller();
+    tlproyesIn.pause()
+    new ScrollMagic.Scene({
+      triggerElement:proyes,
+      duration:"100%",
+      triggerHook:0.5,
 
-  }).on("enter", function(e){
-    tlproyesIn.play()
-  }).on("leave", function(e){
-    tlproyesIn.reverse()
-  }).addTo(controller_1)
-  }else{
-    console.log("less")
-    lottie_desk.css({"display":"none"})
-  }
+    }).on("enter", function(e){
+      tlproyesIn.play()
+    }).on("leave", function(e){
+      tlproyesIn.reverse()
+    }).addTo(controller_1)
+    }else{
+      console.log("less")
+      lottie_desk.css({"display":"none"})
+    }
 
 
 
