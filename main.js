@@ -150,7 +150,7 @@ if(window.innerHeight>568){
     //tlPersona.reverse()
   }).on("leave", function(e){
   // tlPersona.play()
-  }).addTo(controller_1).addIndicators()
+  }).addTo(controller_1)
 
   //LABORAL
 
@@ -170,7 +170,7 @@ if(window.innerHeight>568){
     tlLaboralIn.play()
   }).on("leave", function(e){
     tlLaboralIn.reverse()
-  }).addTo(controller_1).addIndicators()
+  }).addTo(controller_1)
 
   //EDU
 
@@ -190,7 +190,7 @@ if(window.innerHeight>568){
     tleduIn.play()
   }).on("leave", function(e){
     tleduIn.reverse()
-  }).addTo(controller_1).addIndicators()
+  }).addTo(controller_1)
 
   //Skills
 
@@ -210,7 +210,7 @@ if(window.innerHeight>568){
     tlskillsIn.play()
   }).on("leave", function(e){
     tlskillsIn.reverse()
-  }).addTo(controller_1).addIndicators()
+  }).addTo(controller_1)
 
   //Proyes
 
@@ -230,7 +230,7 @@ if(window.innerHeight>568){
     tlproyesIn.play()
   }).on("leave", function(e){
     tlproyesIn.reverse()
-  }).addTo(controller_1).addIndicators()
+  }).addTo(controller_1)
   }else{
     console.log("less")
     lottie_desk.css({"display":"none"})
