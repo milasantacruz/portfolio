@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function(){
       tlLaboralIn.play()
     }).on("leave", function(e){
       tlLaboralIn.reverse()
-    }).addTo(controller_1).addIndicators()
+    }).addTo(controller_1)
 
     //EDU
 
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function(){
       tleduIn.play()
     }).on("leave", function(e){
       tleduIn.reverse()
-    }).addTo(controller_1).addIndicators()
+    }).addTo(controller_1)
 
     //Skills
 
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function(){
       tlskillsIn.play()
     }).on("leave", function(e){
       tlskillsIn.reverse()
-    }).addTo(controller_1).addIndicators()
+    }).addTo(controller_1)
 
     //Proyes
 
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function(){
       tlproyesIn.play()
     }).on("leave", function(e){
       tlproyesIn.reverse()
-    }).addTo(controller_1).addIndicators()
+    }).addTo(controller_1)
 
 
 
