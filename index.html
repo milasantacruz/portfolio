@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="bg-color-rose">
+    <div class="globalWrapper">        
+        <!-- NAVBAR -->
+        <nav class=" navbar fixed-top navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a href="#" class="color-green navbar-brand">Argentina Programa #YoProgramo</a>
+            
+                <div class="group-icons d-flex">
+                    <div class="p-3"><i class="bi bi-github"></i></div>
+                    <div class="p-3"><i class="bi bi-linkedin"></i></div>
+                    <button type="button" class="bg-color-red btn btn-dark m-2"><i class="bi bi-door-closed-fill"></i>Login</button>
+                </div>
+            
+            </div>
+        </nav>
+
+        <!-- PERSONA -->
+            <div class="row persona cont100 d-flex align-items-end">
+               <lottie-player class="lottie" src="https://assets7.lottiefiles.com/packages/lf20_wToGI28NVx.json"  background="transparent"  speed="1"  style="width: 100%; height:111%" autoplay></lottie-player>
+               <lottie-player class="lottie_mobile" src="https://assets2.lottiefiles.com/packages/lf20_FMPjGDqepZ.json"  background="transparent"  speed="1"  style="width: 100%; height:114%" autoplay></lottie-player>
+
+               <div class="compoPersona d-flex pb-4 mb-4">
+                    <div class="col-md-2">
+                        <svg>
+                            <filter id="blur" x="0" y="0">
+                                <feFlood x="4" y="4" height="2" width="2"/>
+                                
+                                <feComposite width="10" height="10"/>
+                                
+                                <feTile result="a"/>
+                                
+                                <feComposite in="SourceGraphic" in2="a" 
+                                             operator="in"/>
+                                
+                                <feMorphology operator="dilate"
+                                              radius="3"/>
+                              </filter>
+                          </svg>
+                        <img src="./images/mila.png" alt="" class="mt-4 personaImg img-thumbnail bg-color-rose rounded-circle">
+                    </div>
+                    <div class="col-6 d-flex personaText align-items-center">
+                            <blockquote class=" blockquote p-4">
+                                <h1 class="">FullStack Developer Jr</h1>
+                                <footer class="blockquote-footer">Camila Santacruz</footer>
+                            </blockquote>
+                    </div>
+               </div>
+            </div>
+
+        <!-- EXPERIENCIA LABORAL -->
+        <div class="laboral container-fluid p-md-4 p-0">
+            <h1 class="laboralText mb-2 mb-md-4 text-md-start text-center">Experiencia Laboral</h1>
+            <div class="container-md pt-4 experiencia-laboral">
+
+                <div class="laboralItem row trabajo m-md-4 m-0 p-md-4 pt-4 pb-4">
+                    <div class="col-md-3 col-12 pb-4">
+                        <img src="./images/ns.png" alt="" class="img-thumbnail ">
+                    </div>
+                    <div class="col-12 col-md-9 p-0">
+                        <div class="container-fluid row empresa p-0">
+                            <div class="p-0 col-6 d-flex justify-content-center strong">Empresa:</div>
+                            <div class="p-0 col-6">Neurosynch</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0">
+                            <div class="p-0 col-6 d-flex justify-content-center strong">Puesto:</div>
+                            <div class="p-0 col-6">FullStack Developer</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0">
+                            <div class="p-0 col-6 d-flex justify-content-center strong">Periodo:</div>
+                            <div class="col-6">2019 - 2021</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0">
+                            <div class="p-0 col-6 d-flex justify-content-center strong">Descripcion:</div>
+                            <div class="p-0 col-6">Diseno y desarrollo de la landing del proyecto. El Frontend fue realizado con Htlml, Javascript y Bulma-css. Tambien se implemento una base de datos de firebase para la recoleccion de Emails y subscripcion</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="laboralItem row trabajo m-md-4 m-0 p-md-4 pt-4 pb-4">
+                    <div class="col-md-3 col-12 pb-4">
+                        <img src="./images/lofo-fkr.png" alt="" class="img-thumbnail ">
+                    </div>
+                    <div class="col-12 col-md-9 p-0 ">
+                        <div class="container-fluid row empresa p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Empresa:</div>
+                            <div class=" p-0 col-6">Freaknoize Studio</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Puesto:</div>
+                            <div class=" p-0 col-6">FullStack Developer</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Periodo:</div>
+                            <div class=" p-0 col-6">2020 - 2022</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Descripcion:</div>
+                            <div class=" p-0 col-6">Diseno y desarrollo de la Web del Estudio. El Frontend fue realizado con React/Gatsby , Bulma-css y desplegado en Netlify. Tambien se implemento un Headless CMS de Strapi con postgress y Heroku</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="laboralItem row trabajo m-md-4 m-0 p-md-4 pt-4 pb-4">
+                    <div class="col-md-3 col-12 pb-4">
+                        <img src="./images/flor.png" alt="" class="img-thumbnail ">
+                    </div>
+                    <div class="col-12 col-md-9 p-0 ">
+                        <div class="container-fluid row empresa p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Empresa:</div>
+                            <div class=" p-0 col-6">Florencia Muriel</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Puesto:</div>
+                            <div class=" p-0 col-6">FullStack Developer</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Periodo:</div>
+                            <div class=" p-0 col-6">2020 - 2022</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Descripcion:</div>
+                            <div class=" p-0 col-6">Diseno y desarrollo del portfolio de Florencia Muriel, animadora 2D. El Frontend fue realizado con React/Gatsby , Bulma-css y desplegado en Netlify. Tambien se implemento un Headless CMS de Strapi con postgress y Heroku</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="laboralItem row trabajo m-md-4 m-0 p-md-4 pt-4 pb-4">
+                    <div class="col-md-3 col-12 pb-4">
+                        <img src="./images/logoit_it.png" alt="" class="img-thumbnail ">
+                    </div>
+                    <div class="col-12 col-md-9 p-0 ">
+                        <div class="container-fluid row empresa p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Empresa:</div>
+                            <div class=" p-0 col-6">Intercambios Transorganicos</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Puesto:</div>
+                            <div class=" p-0 col-6">JAMStack Developer </div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Periodo:</div>
+                            <div class=" p-0 col-6">2021 - 2022</div>
+                        </div>
+                        <div class="container-fluid row titulo p-0 ">
+                            <div class=" p-0 col-6 d-flex justify-content-center strong">Descripcion:</div>
+                            <div class=" p-0 col-6">Diseno y desarrollo de la web del proyecto. El Frontend fue realizado con React/Gatsby , Bulma-css y desplegado en Netlify. Tambien se implemento un Headless CMS de Strapi con SQLite y Docker</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- EDUCACION -->
+
+        <div class="edu container-fluid p-md-4">
+            <h1 class="eduText text-md-start text-center">Educacion</h1>
+            <div class="eduItem container-md educacion mt-4 pt-4 pb-4">
+                <div class="row m-md-4 p-md-4">
+                    <div class="col-3">
+                        <img src="./images/ada.png" alt="" class="img-thumbnail ">
+                    </div>
+                    <div class="col-9 ">
+                        <div class="container-fluid row instituto">
+                            <div class="col-6 d-flex justify-content-center strong">Instituto:</div>
+                            <div class="col-6">Ada ITW</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Titulo:</div>
+                            <div class="col-6">Frontend Developer</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Periodo:</div>
+                            <div class="col-6">2018</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Descripcion:</div>
+                            <div class="col-6">Desarrollo web FrontEnd; HTML5, css, js</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eduItem container-md educacion mt-4 pt-4 pb-4">
+                <div class="row m-md-4 p-md-4">
+                    <div class="col-3">
+                        <img src="./images/argentinaprograma.png" alt="" class="img-thumbnail ">
+                    </div>
+                    <div class="col-9 ">
+                        <div class="container-fluid row instituto">
+                            <div class="col-6 d-flex justify-content-center strong">Instituto:</div>
+                            <div class="col-6">Argentina Programa 1` etapa #SeProgramar</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Titulo:</div>
+                            <div class="col-6">Fundamentos de la programacion</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Periodo:</div>
+                            <div class="col-6">2021</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Descripcion:</div>
+                            <div class="col-6">Programacion imperativa y Programacion dirigida a Objetos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eduItem container-md educacion mt-4 pt-4 pb-4">
+                <div class="row m-md-4 p-md-4">
+                    <div class="col-3">
+                        <img src="./images/argentinaprograma.png" alt="" class="img-thumbnail ">
+                    </div>
+                    <div class="col-9 ">
+                        <div class="container-fluid row instituto">
+                            <div class="col-6 d-flex justify-content-center strong">Instituto:</div>
+                            <div class="col-6">Argentina Programa 2` etapa #YoProgramo</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Titulo:</div>
+                            <div class="col-6">Programacion Web FullStack</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Periodo:</div>
+                            <div class="col-6">2022</div>
+                        </div>
+                        <div class="container-fluid row titulo">
+                            <div class="col-6 d-flex justify-content-center strong">Descripcion:</div>
+                            <div class="col-6">Angular,Api Rest, TypeScript, Bases de Datos, Java, SpringBoot y DevOps</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- HARD&SOFT -->
+
+        <div class="skills hys container-fluid p-4 cont100">
+            <h1 class="skillsText pt-4 mt-4 mb-4 pb-4 text-md-start text-center">Hard & Soft Skills</h1>
+        <div class=" container d-md-flex align-items-center">
+                <div class="skillsItem container-md d-flex justify-content-center">
+                    <div class="chartContainer">
+                        <canvas id="soft" ></canvas>
+                    </div>
+                </div>
+
+                <div class="skillsItem container-md d-flex justify-content-center">
+                    <div class="chartContainer">
+                        <canvas id="hard" ></canvas>
+                    </div>
+                </div>
+        </div>
+        </div>
+        
+
+            <!-- PROYECTOS -->
+        <div class="proyes container-fluid p-4">
+            <div class="proyesText pt-4 mt-4"><h1 class="text-md-start text-center">Proyectos</h1></div>
+                <div class="proyectos">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner d-flex align-items-center cinner">
+                            <div class="carousel-item active myborder" id="myInput_0">
+                                <div class="mixblend d-flex align-items-center">
+                                    <img src="./images/ns-w.png" class="myInputs d-block w-100" alt="...">
+                                    <h1 class="cap">Naurosynchhealth.com</h1>
+                                </div>
+                            </div>
+                            <div class="carousel-item myborder" id="myInput_1">
+                                <div class="mixblend d-flex align-items-center">
+                                    <img src="./images/fr.png" class="myInputs d-block w-100" alt="...">
+                                </div>
+                                <h1 class="cap">Freaknoizestudio.com</h1>
+                            </div>
+                            <div class="carousel-item myborder" id="myInput_2">
+                                <div class="mixblend d-flex align-items-center">
+                                    <img src="./images/flor_web.png" class="myInputs d-block w-100" alt="...">
+                                </div>
+                                <h1 class="cap">Florenciamuriel.com</h1>
+                            </div>
+                            <div class="carousel-item myborder" id="myInput_3">
+                                <div class="mixblend d-flex align-items-center">
+                                    <img src="./images/it.png" class="myInputs d-block w-100" alt="...">
+                                </div>
+                                <h1 class="cap">Intercambiotransorganicos.org</h1>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+            <!-- //MODALS -->
+
+            <div class="modal" id="myModal_0" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-color-rose">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Neurosynch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <h3>2021</h3>
+                            <p>Diseno y desarrollo de la landing del proyecto. El Frontend fue realizado con Htlml, Javascript y Bulma-css. Tambien se implemento una base de datos de firebase para la recoleccion de Emails y subscripcion</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="color-red" href="https://neurosynch.netlify.app">Go to Page</a>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal" id="myModal_1" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-color-rose">
+                    <div class="modal-header">
+                    <h5 class="modal-title">FreakNoize Studio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <h3>2021</h3>
+                            <p>Diseno y desarrollo de la Web del Estudio. El Frontend fue realizado con React/Gatsby , Bulma-css y desplegado en Netlify. Tambien se implemento un Headless CMS de Strapi con postgress y Heroku</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="color-red" href="https://freaknoizestudio.netlify.app">Go to Page</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal" id="myModal_2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-color-rose">
+                    <div class="modal-header">
+                    <h5 class="modal-title">FlorenciaMuriel.com</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <h3>2021</h3>
+                            <p>Diseno y desarrollo del portfolio de Florencia Muriel, animadora 2D. El Frontend fue realizado con React/Gatsby , Bulma-css y desplegado en Netlify. Tambien se implemento un Headless CMS de Strapi con postgress y Heroku</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="color-red" href="https://florenciamuriel.com">Go to Page</a>    
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal" id="myModal_3" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-color-rose">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Intercambios Transorganicos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <h3>2021</h3>
+                            <p>Diseno y desarrollo de la web del proyecto. El Frontend fue realizado con React/Gatsby , Bulma-css y desplegado en Netlify. Tambien se implemento un Headless CMS de Strapi con SQLite y Docker</p>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="color-red" href="https://intercambiostransorganicos.org">Go to Page</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" ></script>
+<script src="./proyectos.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/jquery.ScrollMagic.min.js" integrity="sha512-RoCOXSeYXosX4PjvRhUz0X+pmdhOJJkbjYZzmZ9dS1Iy9E/WnkTqMy+LVkPX3BV0ZgSFB2AYQKfi6ZKdNdXJnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="./main.js" ></script>
+</body>
+</html>
