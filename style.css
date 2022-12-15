@@ -1,3 +1,7 @@
+.globalWrapper{
+    overflow: hidden;
+}
+
 h1,a{
     font-family: consolas;
 }
@@ -63,8 +67,7 @@ h1,a{
 }
 
 .cinner{
-    width:900px;
-    height:900px;
+    width:1200px;
 }
 
 .cap {

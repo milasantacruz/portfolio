@@ -126,9 +126,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
    var lottie_desk = $(".lottie");
    var lottie_mob = $(".lottie_mobile")
+   var duration;
   if(window.matchMedia("(min-width: 576px)").matches){
     lottie_mob.css({"display":"none"})
-    //GSAP
+    duration = "1000";
+  }else{
+    console.log("less")
+    lottie_desk.css({"display":"none"})
+    duration = "-1";
+  }
+
+
+   //GSAP
     //PERSONA
 
     var persona = $(".persona");
@@ -163,14 +172,14 @@ document.addEventListener('DOMContentLoaded', function(){
     tlLaboralIn.pause()
     new ScrollMagic.Scene({
       triggerElement:laboral,
-      duration:"100%",
+      duration:duration,
       triggerHook:0.5,
 
     }).on("enter", function(e){
       tlLaboralIn.play()
     }).on("leave", function(e){
       tlLaboralIn.reverse()
-    }).addTo(controller_1)
+    }).addTo(controller_1).addIndicators()
 
     //EDU
 
@@ -183,14 +192,14 @@ document.addEventListener('DOMContentLoaded', function(){
     tleduIn.pause()
     new ScrollMagic.Scene({
       triggerElement:edu,
-      duration:"100%",
+      duration:duration,
       triggerHook:0.5,
 
     }).on("enter", function(e){
       tleduIn.play()
     }).on("leave", function(e){
       tleduIn.reverse()
-    }).addTo(controller_1)
+    }).addTo(controller_1).addIndicators()
 
     //Skills
 
@@ -203,14 +212,14 @@ document.addEventListener('DOMContentLoaded', function(){
     tlskillsIn.pause()
     new ScrollMagic.Scene({
       triggerElement:skills,
-      duration:"100%",
+      duration:duration,
       triggerHook:0.5,
 
     }).on("enter", function(e){
       tlskillsIn.play()
     }).on("leave", function(e){
       tlskillsIn.reverse()
-    }).addTo(controller_1)
+    }).addTo(controller_1).addIndicators()
 
     //Proyes
 
@@ -223,18 +232,15 @@ document.addEventListener('DOMContentLoaded', function(){
     tlproyesIn.pause()
     new ScrollMagic.Scene({
       triggerElement:proyes,
-      duration:"100%",
+      duration:duration,
       triggerHook:0.5,
 
     }).on("enter", function(e){
       tlproyesIn.play()
     }).on("leave", function(e){
       tlproyesIn.reverse()
-    }).addTo(controller_1)
-    }else{
-      console.log("less")
-      lottie_desk.css({"display":"none"})
-    }
+    }).addTo(controller_1).addIndicators()
+
 
 
 
