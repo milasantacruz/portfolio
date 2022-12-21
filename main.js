@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     console.log("develop")
   }
   //GET PROYECTOS
-  var apiProyectos = 'https://my-json-server.typicode.com/milasantacruz/miniback-jsonServer/proyectos'
+  var apiProyectos = 'http://localhost:5000/proyectos'
   var getProyectos = async () =>{
    var laborContainer = $("#laboral");
   try{
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
  //GET EDUCACION
 
- var apiEducacion = 'https://my-json-server.typicode.com/milasantacruz/miniback-jsonServer/educacion'
+ var apiEducacion = 'http://localhost:5000/educacion'
  var getEducacion = async () =>{
   var educContainer = $("#educacion");
  try{
