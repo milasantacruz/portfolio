@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+  console.log(document.location)
   //GET PROYECTOS
   var apiProyectos = 'http://localhost:5000/proyectos'
   var getProyectos = async () =>{
