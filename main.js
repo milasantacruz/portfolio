@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){
-  console.log(document.location)
+  var prod = "https://milasantacruz.github.io/portfolio-front-estatico/"
+  if(document.location = prod ){
+    console.log("production")
+  }else{
+    console.log("develop")
+  }
   //GET PROYECTOS
   var apiProyectos = 'http://localhost:5000/proyectos'
   var getProyectos = async () =>{
