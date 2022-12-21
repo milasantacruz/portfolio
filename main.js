@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function(){
   var prod = "https://milasantacruz.github.io/portfolio-front-estatico/"
-  if(document.location = prod ){
+  if(document.location == prod ){
     console.log("production")
   }else{
     console.log("develop")
   }
   //GET PROYECTOS
-  var apiProyectos = 'http://localhost:5000/proyectos'
+  var apiProyectos = 'https://my-json-server.typicode.com/milasantacruz/miniback-jsonServer/proyectos'
   var getProyectos = async () =>{
    var laborContainer = $("#laboral");
   try{
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
  //GET EDUCACION
 
- var apiEducacion = 'http://localhost:5000/educacion'
+ var apiEducacion = 'https://my-json-server.typicode.com/milasantacruz/miniback-jsonServer/educacion'
  var getEducacion = async () =>{
   var educContainer = $("#educacion");
  try{
