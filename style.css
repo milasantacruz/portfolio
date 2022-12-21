@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 .globalWrapper{
     overflow: hidden;
 }
@@ -30,16 +32,6 @@ h1,a{
     background-color:rgba(245, 222, 179, 0)!important;
 }
 
-.navbar::before {
-    background-color: #f2dfeba8;
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    z-index: -1;
-    filter: blur(0.5px);
-  }
-
 .myborder{
     border:solid #153440 4px;
     mix-blend-mode: luminosity;
@@ -53,18 +45,48 @@ h1,a{
     height: 100vh;
   }
 
+
+/* BANNER */
+
+
+.lottie{
+    position:absolute;
+}
+
+.lottie_mobile{
+    position:absolute;
+    z-index: -1;
+    top:-100px;
+}
+
+
+
+
+/* NAVBAR */
+
+.navbar::before {
+    background-color: #f2dfeba8;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    filter: blur(0.5px);
+  }
+
+
+/* PERSONA */
+
   .persona{
     
     position:relative;
   }
 
-  /* .personaImg{
-    filter:url(#blur);
-  } */
-
 .img-thumbnail{
     background-color:unset!important;
 }
+
+/* PROYECTOS */
 
 .cinner{
     width:1200px;
@@ -104,15 +126,33 @@ h1,a{
 }
 
 
-.lottie{
-    position:absolute;
+/* EDITABLE */
+
+.my-pe{
+    cursor:pointer;
 }
 
-.lottie_mobile{
-    position:absolute;
-    z-index: -1;
-    top:-100px;
+#formPersona{
+    display:none;
 }
+
+.eduItem{
+    position: relative;
+}
+
+.editarTrabajo, .editarEdu{
+    position: absolute;
+    right:0;
+    width: auto;
+  }
+
+  .formProyecto, .formEducacion, .addformEducacion{
+    display: none;
+  }
+
+  .imgPrev{
+    width:20%;
+  }
 
 @media(max-width: 576px){
 
@@ -144,6 +184,22 @@ h1,a{
         height: 200%!important;
         z-index: -1;
         top: -200px;
+      }
+
+      /* EDIT */
+
+      #editarPersona {
+        position: absolute;
+        left: 32vw;
+      }
+
+      #formPersona{
+        top:0;
+        z-index: 5;
+        position: absolute;
+        width: 90vw;
+        right: 0;
+
       }
 
 }
