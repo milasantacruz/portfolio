@@ -1,0 +1,62 @@
+<div class="eduItem  container-md educacion mt-4 pt-4 pb-4">
+    <div id="editarEdu" class="editarEdu row">
+        <i class="col-2 bi bi-pencil-square fa-4x"></i>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <img [src]="educacion.imagen" alt="" class="img-thumbnail ">
+        </div>
+        <div class="col-9 ">
+            <div class="container-fluid row instituto">
+                <div class="col-6 d-flex justify-content-center strong">Instituto:</div>
+                <div class="col-6">{{educacion.instituto}}</div>
+            </div>
+            <div class="container-fluid row titulo">
+                <div class="col-6 d-flex justify-content-center strong">Titulo:</div>
+                <div class="col-6">{{educacion.titulo}}</div>
+            </div>
+            <div class="container-fluid row titulo">
+                <div class="col-6 d-flex justify-content-center strong">Periodo:</div>
+                <div class="col-6">{{educacion.periodo}}</div>
+            </div>
+            <div class="container-fluid row titulo">
+                <div class="col-6 d-flex justify-content-center strong">Descripcion:</div>
+                <div class="col-6">{{educacion.descripcion}}</div>
+            </div>
+        </div>
+    </div>
+
+    <form  id="formEducacion" class=" formEducacion border border-danger rounded bg-color-rose p-2 m-2">
+        <div class="form-group row">
+            <div class="col-sm-10">
+                 <input type="text" id="institutoI"  placeholder="Institulo" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="text" id="tituloI"  placeholder="Titulo" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="text" id="periodoEduI"  placeholder="Periodo" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="text" id="desEduI"  placeholder="Descripcion" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="file" id="imagenEduI"  placeholder="Search" class="form-control">
+            </div>
+        </div>
+        <img src="" id="eduImgPrev" class="pt-4 img-thumbnail imgPrev" />
+        <div class="container" >
+        <button id="cancelarNewEdu" class="btn bg-color-red m-2">cancelar</button>
+        <button id="confirmarNewEdu" class="btn bg-color-red m-2">confirmar</button></div>
+
+    </form>
+    
+</div>

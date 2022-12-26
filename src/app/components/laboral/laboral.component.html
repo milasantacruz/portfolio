@@ -1,0 +1,49 @@
+<section class="laboral container-fluid p-md-4 p-0">
+    <div class="row my-pe p-4" >
+        <h1 class="col-10 laboralText mb-2 mb-md-4 text-md-start text-center">Experiencia Laboral</h1>
+        <i id="addProyecto" class="col-2 bi bi-pencil-square fa-4x"> Add Proyecto</i>
+    </div>
+    <div id="laboral" class="container-md pt-4 experiencia-laboral">
+
+        <form  id="formNewPro" class=" formProyecto border border-danger rounded bg-color-rose p-2 m-2">
+            <div class="form-group row">
+                <div class="col-sm-10">
+                     <input type="text" id="empresaNew"  placeholder="Empresa" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="text" id="puestoNew"  placeholder="Puesto" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="text" id="periodoNew"  placeholder="periodo" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="text" id="descripcionNew"  placeholder="descripcion" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="file" id="imagenNew"  placeholder="Search" class="form-control">
+                </div>
+            </div>
+            <img src="" id="newImgPrev" class="pt-4 img-thumbnail imgPrev" />
+            <div class="container" >
+            <button id="cancelarNewProyecto" class="btn bg-color-red m-2">cancelar</button>
+            <button id="confirmarNewProyecto" class="btn bg-color-red m-2">confirmar</button></div>
+    
+        </form>
+
+        <laboral-item
+            *ngFor="let laboralItem of dataProyectos"
+            [labor]="laboralItem"
+        ></laboral-item>
+
+
+
+    </div>
+</section>

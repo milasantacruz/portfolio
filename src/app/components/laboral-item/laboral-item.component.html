@@ -1,0 +1,26 @@
+<div class="laboralItem row trabajo m-md-4 m-0 p-md-4 pt-4 pb-4">
+    <div class="col-md-3 col-12 pb-4">
+        <img [src]="labor.imagen" alt="" class="img-thumbnail ">
+    </div>
+    <div class="col-12 col-md-9 p-0">
+        <div class="container-fluid row empresa p-0">
+            <div class="p-0 col-6 d-flex justify-content-center strong">Empresa:</div>
+            <div class="p-0 col-6">{{labor.empresa}}</div>
+        </div>
+        <div class="container-fluid row titulo p-0">
+            <div class="p-0 col-6 d-flex justify-content-center strong">Puesto:</div>
+            <div class="p-0 col-6">{{labor.puesto}}</div>
+        </div>
+        <div class="container-fluid row titulo p-0">
+            <div class="p-0 col-6 d-flex justify-content-center strong">Periodo:</div>
+            <div class="col-6">{{labor.periodo}}</div>
+        </div>
+        <div class="container-fluid row titulo p-0">
+            <div class="p-0 col-6 d-flex justify-content-center strong">Descripcion:</div>
+            <div class="p-0 col-6">{{labor.descripcion}}</div>
+        </div>
+    </div>
+    <div class="my-pe p-4" id="editarTrabajo">
+        <i class="bi bi-pencil-square fa-4x"></i>
+    </div>
+</div>
