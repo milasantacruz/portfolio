@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function(){
                </div>
                <div class="container-fluid row titulo">
                    <div class="col-6 d-flex justify-content-center strong">Titulo:</div>
-                   <div id="eduTitulo-${i.id}" class="col-6">${i.titulo}r</div>
+                   <div id="eduTitulo-${i.id}" class="col-6">${i.titulo}</div>
                </div>
                <div class="container-fluid row titulo">
                    <div class="col-6 d-flex justify-content-center strong">Periodo:</div>
