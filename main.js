@@ -213,7 +213,7 @@ getEducacion();
         ],
         datasets: [{
           label: 'Soft Skills',
-          data: [85, 82, 90, 84, 72, 78],
+          data: [85, 90, 90, 84, 72, 78],
           fill: true,
           backgroundColor: 'rgba(255, 99, 132, 0.2)',
           borderColor: '#D91E0D',
@@ -252,7 +252,7 @@ getEducacion();
         ],
         datasets: [{
           label: 'Hard Skills',
-          data: [90, 87, 70, 68, 60, 40],
+          data: [98, 92, 78, 72, 70, 70],
           fill: true,
           backgroundColor: 'rgba(255, 99, 132, 0.2)',
           borderColor: '#D91E0D',
