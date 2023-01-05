@@ -383,7 +383,7 @@ getEducacion();
         tleduIn.play()
       }).on("leave", function(e){
         tleduIn.reverse()
-      }).addTo(controller_1).addIndicators()
+      }).addTo(controller_1)
     }
 
     //Skills

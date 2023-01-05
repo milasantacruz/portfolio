@@ -32,6 +32,15 @@ h1,a{
     background-color:rgba(245, 222, 179, 0)!important;
 }
 
+.micon{
+    color:#D91E0D;
+    font-size: 1.5em;
+}
+
+.loginbutton{
+    display: none;
+}
+
 .myborder{
     border:solid #153440 4px;
     mix-blend-mode: luminosity;
@@ -144,6 +153,7 @@ h1,a{
     position: absolute;
     right:0;
     width: auto;
+    display: none;
   }
 
   .formProyecto, .formEducacion, .addformEducacion{
@@ -152,6 +162,14 @@ h1,a{
 
   .imgPrev{
     width:20%;
+  }
+
+  #addProyecto, #addEducacion, #add{
+    display: none;
+  }
+
+  #editarPersona{
+    display: none;
   }
 
 @media(max-width: 576px){
@@ -191,6 +209,7 @@ h1,a{
       #editarPersona {
         position: absolute;
         left: 32vw;
+        display: none;
       }
 
       #formPersona{
